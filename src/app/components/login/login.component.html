@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h3 class="card-title">Login</h3>
+      <form [formGroup]='loginGroup'>
+        <input class="form-control mb-2" formControlName="email" type="text" placeholder="email" autocomplete="false">
+        <input class="form-control mb-2" formControlName="password" type="password" placeholder="password" autocomplete="false">
+        <button class="btn btn-danger" (click)="login()" [disabled]="loginGroup.invalid" >Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
